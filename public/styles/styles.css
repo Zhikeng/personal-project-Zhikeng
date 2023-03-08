@@ -23,7 +23,11 @@ body {
     /* background-color: var(--black); */
     /* background-image: linear-gradient(#ffffff,#5d6262,#000000); */
     color:var(--aquamarine);
-    /* z-index: ; */
+    background-image: url("/public/images/layout-photo2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 nav {
@@ -124,10 +128,10 @@ p {
 
 .map {
     height:100vh;
-    width:80%;
+    width:100%;
     min-width: fit-content;
-    border:#cdcd16 solid 3px;
-    background-image: url("../public/images/layout-photo2.jpg");
+    /* border:#cdcd16 solid 3px; */
+    background-image: url("/public/images/map-of-massachusetts.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
