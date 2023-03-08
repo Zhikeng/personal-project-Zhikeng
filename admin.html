@@ -46,14 +46,36 @@
         </div>
      </div>
    </nav>
-
  <!-- content -->
  <!-- <div class="layout"> -->
   <div class="content">
-    <h1>ABOUT MA HOUSING ASSISTANCE</h1>
-    <P>MA Housing Assistance is a website built for the people who are living in greater Boston area. As we know, the housing has been one of the biggest issues in Boston due to the city's ongoing housing shortage. Boston is now the 2nd most expensive city for a one-bedroom rental according to Zumper's national rent report of January 2023. Now MA Housing Assistance is trying to provide a platform for those in need to share their leasing information with each other. For exemple, people can post leasing annoncement on this site and people can seek help regarding to any housing issues here. Furthermore, we'll connect to MassHousing regularly to ask for help.</P>
+    <h1>REGISTER</h1>
+    <fieldset> 
+    <form action="#" class="form">
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" placeholder="first name" required></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="last name" required></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="email" required></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z 0-5]{8,}" placeholder="password" required></label>
+        <label for="age">Input your age(years): <input id="age" type="number" name="age" min="15" max="120" placeholder="age"></label>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file"></label>
+        <label for="purpose">Why do I come to this website?
+            <select id="purpose" name="purpose" required>
+                <option selected disabled>Select One</option>
+                <option>Find information</option>
+                <option>Share information</option>
+                <option>Exchange with people</option>
+                <option>Seek help</option>
+                <option>Other</option>
+            </select>            
+        </label>
+        <label for="bio">Provide a bio: <textarea id="bio" name="bio" rows="3" cols="30" placeholder="..."></textarea>
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline">I accept the <a href="#">terms and conditions</a></label>
+    <button type="submit" class="form-button"><a href="">Submit</a></button>
+    </form>
+    </fieldset>
   </div>
- <!-- </div> -->
+<!-- </div> -->
 
 <!-- footer -->
 <footer>
