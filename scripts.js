@@ -1,3 +1,4 @@
+// photo's autoplay
 let photoList = new Array();
 photoList[0]="url(../public/images/auto_1.jpeg)";
 photoList[1]="url(../public/images/auto_2.jpeg)";
@@ -20,3 +21,8 @@ function autoScroll() {
 };
 
 window.setTimeout("autoScroll()",0);
+
+// date 
+let currentDate = new Date();
+let currentDatetStr = currentDate.toLocaleDateString();
+document.getElementById("current_date").innerHTML = currentDatetStr;

@@ -255,6 +255,10 @@ footer {
     /* align-content: center; */
 }
 
+#current_date {
+    text-align: center;
+}
+
 #auto_photo {
     height: 600px;
     width: 800px;
