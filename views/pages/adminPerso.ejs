@@ -1,0 +1,17 @@
+<%- include('../partials/head') -%>
+
+    <%- include('../partials/navbar') -%>
+
+        <main>
+            <div class="content">
+                <span><button class="add-button"><a href="./create-perso">ADD
+                            USERS</a></button></span>
+                <span><button class="logout-button"><a href="/logout/">LOGOUT</a></button></span>
+                <h1>USERS INFORMATION</h1>
+                <div class="table-responsive">
+                    <%- include('../partials/perso-listing') -%>
+                </div>
+            </div>
+        </main>
+
+        <%- include('../partials/footer') -%>

@@ -1,0 +1,26 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar') -%>
+
+<div class="content">
+    <h1>RESPONSE DETAIL</h1>
+    <p>Submitted date: <%= foundRes.timeStamp %></p>
+    <p>Respondent status: <%= foundRes.status %></p>
+    <p>House type: <%= foundRes.type %></p>
+    <p>House satisfaction: 
+        <% for(let i = 0; i < foundRes.satisfaction; i++) { %>
+            <i class="fa-solid fa-face-smile"></i>
+        <% } %></p>
+    <p>House problem(s): <%= foundRes.problem %></p>
+    <p>Importance(s) to choose a home: <%= foundRes.importance %></p>
+    <p>Reasonable rent: <%= foundRes.rent %></p>
+    <p>Why stay in current home: <%= foundRes.reason %></p>
+    <p>People living in this home: <% for (let i = 0; i < res.people; i++) { %>
+        <i class="fa-sharp fa-solid fa-person fa-xl"></i>
+        <% } %></p>
+    <p>Respondent age range: <%= foundRes.age %></p>
+    <p>Respondent income range: <%= foundRes.income %></p>
+    <p>Respondent comment: <%= foundRes.comment %></p>
+</div>
+
+<%- include('../partials/footer') -%>

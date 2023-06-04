@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th>DATE</th>
+            <th>STATUS</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (res of responseArray) { %>
+            <tr>
+                <td>
+                   <%= res.timeStamp %>
+                </td>
+                <td>
+                    <%= res.status %>
+                </td>
+                <td>
+                    <button class="link-button" type="submit">
+                        <a href="./update-res/<%= res._id %>">EDIT</a>
+                    </button>
+                </td>
+                <td>
+                    <form action="/res/<%= res._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                        <button class="link-button" type="submit">DELETE</button>
+                    </form>
+                </td>
+            </tr>
+            <% } %>
+    </tbody>
+</table>

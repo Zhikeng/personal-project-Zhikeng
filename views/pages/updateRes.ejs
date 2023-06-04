@@ -1,0 +1,159 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar') -%>
+
+<div class="content">
+    <h1>UPDATE RESPONSE</h1>
+    <form action="/res/<%= foundRes._id %>?_method=PUT" method="POST" class="form">
+        <div>
+            <label for="timeStamp">Date: 
+                <input id="timeStamp" name="timeStamp" type="datetime-local" value="<%= foundRes.timeStamp %>" required/>
+            </label>
+        </div>
+        <div>
+            <label for="status">Status: 
+                <select id="status" name="status" value="<%= foundRes.status %>" multiple required>
+                    <!-- <option selected disabled>Select one</option> -->
+                    <option>Homeowner</option>
+                    <option>Renter</option>
+                    <option>Living with others without paying rent or mortgage</option>
+                    <option>Living with others, paying rent or mortgage</option>
+                    <option>Homeless</option>
+                    <option>Other</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="type">House type:
+                <select id="type" name="type" value="<%= foundRes.type %>" required>
+                    <option selected disabled>Select one</option>
+                    <option>Single-Family House</option>
+                    <option>Townhouse</option>
+                    <option>Multi-Family House</option>
+                    <option>Condominium</option>
+                    <option>Apartment</option>
+                    <option>Co-op</option>
+                    <option>Duplex</option>
+                    <option>Mobile home</option>
+                    <option>Other</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="satisfaction">Satisfaction: 
+                <input id="satisfaction" name="satisfaction" type="number" placeholder="satisfaction from 1 to 5" min="1" max="5" value="<%= foundRes.satisfaction %>" required/>
+            </label>
+        </div>
+        <div>
+            <label for="problem">House Problem(s): 
+                <select id="problem" name="problem" value="<%= foundRes.problem %>" multiple required>
+                    <!-- <option selected disabled>Select one</option> -->
+                    <option>Expensive rent</option>
+                    <option>Expensive repair costs</option>
+                    <option>Property Value Fell</option>
+                    <option>Foreclosure Concerns</option>
+                    <option>Bad/Rude/Loud Neighbors</option>
+                    <option>Crime in Neighborhood</option>
+                    <option>No problem for now</option>
+                    <option>Other</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="importance">Importance(s) to choose a home: 
+                <select id="importance" name="importance" value="<%= foundRes.importance %>" multiple required>
+                    <!-- <option selected disabled>Select one</option> -->
+                    <option>Cost I can afford</option>
+                    <option>Close to transit stops</option>
+                    <option>Close to work</option>
+                    <option>Close to schools</option>
+                    <option>Close to family/friends</option>
+                    <option>Close to health care facilities</option>
+                    <option>Close to shopping malls</option>
+                    <option>Number of bedrooms</option>
+                    <option>Yard size</option>
+                    <option>Neighborhood and surrounding area</option>
+                    <option>Public services</option>
+                    <option>Sports facilities</option>
+                    <option>Accessibility for disabled</option>
+                    <option>Age of the property</option>
+                    <option>Layout and features of the property</option>
+                    <option>Other</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="rent">Reasonable rent to you:
+                <select id="rent" name="rent" value="<%= foundRes.rent %>" required>
+                    <option selected disabled>Select one</option>
+                    <option>< $500</option>
+                    <option>$500-$1,000</option>
+                    <option>$1,000-1,500</option>
+                    <option>$1,500-$2,000</option>
+                    <option>2,000-$2,500</option>
+                    <option>$2,500-$3,000</option>
+                    <option>$3,000-$4,000</option>
+                    <option>$4,000-$5,000</option>
+                    <option>$5,000-$6,000</option>
+                    <option>> $6,000</option>
+                    <option>Other</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="reason">Reason why stay in current home: 
+                <select id="reason" name="reason" value="<%= foundRes.reason %>" required>
+                    <option selected disabled>Select one</option>
+                    <option>Can't sell the house</option>
+                    <option>Can't afford to move</option>
+                    <option>Can't find an affordable place to live</option>
+                    <option>Job reasons</option>
+                    <option>Family reasons</option>
+                    <option>Other</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="people">People living in your home: 
+                <input id="people" name="people" type="number" placeholder="people living in your home" min="1" max="999" value="<%= foundRes.people %>" required/>
+            </label>
+        </div>
+        <div>
+            <label for="age">Age range: 
+                <select id="age" name="age" value="<%= foundRes.age %>" required>
+                    <option selected disabled>Select one</option>
+                    <option>< 18</option>
+                    <option>18-29</option>
+                    <option>30-39</option>
+                    <option>40-55</option>
+                    <option>56-62</option>
+                    <option>> 62</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="income">Income range: 
+                <select id="income" name="income" value="<%= foundRes.income %>" required>
+                    <option selected disabled>Select one</option>
+                    <option>< $25,000</option>
+                    <option>$25,000- $36,000</option>
+                    <option>$36,000-$53,000</option>
+                    <option>$53,000-$79,000</option>
+                    <option>$79,000-$113,000</option>
+                    <option>> $113,000</option>
+                </select>  
+            </label>
+        </div>
+        <div>
+            <label for="comment">Comment: 
+                <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Share your thoughts about housing..."><%= foundRes.comment %></textarea>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit" class="form-button" />
+        </div>
+    </form>
+</div>
+
+<%- include('../partials/footer') -%>

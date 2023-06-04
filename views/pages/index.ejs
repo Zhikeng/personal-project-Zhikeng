@@ -1,0 +1,56 @@
+<%- include('../partials/head') -%>
+
+  <%- include('../partials/navbar') -%>
+
+    <!-- content -->
+    <main>
+      <div class="layout">
+        <div class="index-text">
+          <p>MassHousing is an independent authority that was created by the Massachusetts state legislature in 1966 to
+            finance the creation and preservation of affordable housing. While MassHousing has provided the financial
+            resources for thousands of rental housing units, they do not manage these properties on a day-to-day basis.
+            All of these properties are privately managed, and anyone wishing to rent an apartment at a property
+            financed or overseen by MassHousing must contact the appropriate management company.</p>
+        </div>
+        <div class="index-content">
+          <!-- photos autoplay frame -->
+          <div>
+            <div id="auto_photo">
+              <!-- <div class="photo-list" id="first_photo" onclick="autoplay()"></div>
+        <div class="photo-list" id="second_photo" onclick="autoplay()"></div> -->
+            </div>
+            <u><i>Note: This book does NOT include information on vacancies,<br> waiting lists or the application
+                process; for that information,<br> you must contact a property’s site office.</i></u>
+          </div>
+          <!-- first way to search -->
+          <!-- <div class="search-engine">
+            <div class="search-wrapper">
+              <label for="search">FIND YOUR HOME?<br>WE'RE HERE TO HELP!<br>SEARCH THE AFFORDABLE HOUSING LIST</label>
+              <input type="search" id="search" placeholder="Search..." data-search>
+            </div>
+            <div class="housing-cards" data-housing-cards-container>
+              <template data-housing-template>
+                <div class="card">
+                  <div class="header" data-header></div>
+                  <div class="body" data-body></div>
+                  <div class="tail" data-tail></div>
+                </div>
+              </template>
+            </div> -->
+          <!-- second way to search -->
+          <div class="search-engine">
+            <h1>&#9889FIND YOUR HOME?<br>HERE TO HELP!&#9889</h1>
+            <div id="searchWrapper">
+              <input type="text" name="searchBar" id="searchBar" placeholder="search..." />
+            </div>
+            <h1>AFFORDABLE HOUSING LIST PROVIDED BY MASSHOUSING</h1>
+            <ul id="housingList"></ul>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <%- include('../partials/scrollbar') -%>
+
+      <%- include('../partials/footer') -%>

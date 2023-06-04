@@ -1,0 +1,25 @@
+<%- include('../partials/head') -%>
+
+  <%- include('../partials/navbar') -%>
+
+    <!-- content -->
+    <main>
+      <!-- <div class="layout"> -->
+      <div class="content">
+        <div class="about-page">
+          <h1>ABOUT MA HOUSING ASSISTANCE</h1>
+          <P>MA Housing Assistance is a website app built for the people who are living in greater Boston area. Nowadays,
+            the housing has been one of the biggest issues in Boston due to the city's ongoing housing shortage. Boston
+            is now the 2nd most expensive city for a one-bedroom rental according to Zumper's national rent report of
+            January 2023. Therefore MA Housing Assistance is trying to provide a platform for those in need to share their
+            leasing information with each other. For example, people can take housing survey on this site and
+            people can seek help regarding to finding an affordable housing. 
+            <br>According to the latest report, we have <%= totalHousing %> affordable housing units in <%= totalLocation %> cities, 
+            <%= totalMgnt %> management companies on list. Statistically, we have in total <%= total1Bed %> Studios or 1B1Bs, 
+            <%= total2_3Beds %> 2B2Bs or 3B3Bs, <%= total4Beds %> 4B4Bs and <%= totalAccess %> Accessible Units.
+            <br>Last but not least, people who have our referral can easily reach out to MassHousing to ask for help.</P>
+        </div>
+      </div>
+      <!-- </div> -->
+    </main>
+    <%- include('../partials/footer') -%>

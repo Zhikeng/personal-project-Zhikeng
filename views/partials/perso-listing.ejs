@@ -1,0 +1,36 @@
+<table>
+    <thead>
+        <tr>
+            <th>TOTAL: <%= persoArray.length %></th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (perso of persoArray) { %>
+            <tr>
+                <td>
+                    <a href="/perso/<%= perso._id %>"><i class="fa-solid fa-user"></i></a>
+                </td>
+                <td>
+                    <%= perso.firstName %> <%= perso.lastName %>
+                </td>
+                <td>
+                    <%= perso.email %>
+                </td>
+                <td>
+                    <button class="link-button" type="submit">
+                        <a href="./update-perso/<%= perso._id %>">EDIT</a>
+                    </button>
+                </td>
+                <td>
+                    <form action="/perso/<%= perso._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                        <button class="link-button" type="submit">DELETE</button>
+                    </form>
+                </td>
+            </tr>
+            <% } %>
+    </tbody>
+</table>

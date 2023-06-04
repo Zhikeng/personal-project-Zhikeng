@@ -1,0 +1,42 @@
+<%- include('../partials/head') -%>
+
+    <%- include('../partials/navbar') -%>
+
+        <div class="content">
+            <div class="survey-title">
+            <h1>SURVEY QUESTIONS AND RESPONSES</h1>
+            </div>
+            <div class="housing-survey">
+                <div class="survey-question">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfQCYGK-vfnx6DP42Gc2Uyzurt6Bwa4mdvuEV45eJAlpWiakA/viewform?embedded=true"
+                        width="450" height="4532" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <div class="res-index">
+                    <% for (res of inventoryArray) { %>
+                        <div class="res-loop">
+                            <a href="/res/<%= res._id %>">
+                                <h2><i class="fa-sharp fa-solid fa-house-chimney fa-2xl fa-beat"></i></h2>
+                            </a>
+                            <p>
+                                <%= res.timeStamp %>
+                            </p>
+                            <p>
+                                <% for(let i=0; i < res.satisfaction; i++) { %>
+                                    <i class="fa-solid fa-face-smile fa-bounce"></i>
+                                    <% } %>
+                            </p>
+                            <p>
+                                <% for (let i=0; i < res.people; i++) { %>
+                                    <i class="fa-sharp fa-solid fa-person fa-bounce fa-xl"></i>
+                                    <% } %>
+                            </p>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+
+        <%- include('../partials/surveyScrollbar') -%>
+
+        <%- include('../partials/footer') -%>
