@@ -33,7 +33,7 @@ body {
 
 nav {
     /* background-color: var(--blue); */
-    background-image: url("/images/nav&foot.jpg");
+    background-image: url("/images/nav-foot.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +116,7 @@ p {
     min-width: fit-content;
     margin: 0;
     overflow-x: hidden;
-    background-image: url("/images/nav&foot.jpg");
+    background-image: url("/images/nav-foot.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,7 +286,7 @@ textarea {
 footer {
     margin: 0 auto;
     /* background-color: var(--blue); */
-    background-image: url("/images/nav&foot.jpg");
+    background-image: url("/images/nav-foot.jpg");
     /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -306,7 +306,7 @@ footer {
     height: 25vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url("/images/nav&foot.jpg");    
+    background-image: url("/images/nav-foot.jpg");    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -367,7 +367,7 @@ footer {
     height: 45vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url("/images/nav&foot.jpg");    
+    background-image: url("/images/nav-foot.jpg");    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
