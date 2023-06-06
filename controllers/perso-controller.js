@@ -13,16 +13,15 @@ module.exports = {
   },
   create: (request, response) => {
     console.log(request.body);
-    const { firstName, lastName, email, age, file, purpose, bio, termsAndConditions } = request.body;
+    const { firstName, lastName, email, age, address, purpose, bio } = request.body;
     const newPerso = new Perso({
       firstName: firstName,
       lastName: lastName,
       email: email,
       age: age,
-      file: file,
+      address: address,
       purpose: purpose,
-      bio: bio,
-      termsAndConditions: termsAndConditions
+      bio: bio
     })
 
     newPerso.save()
@@ -33,18 +32,17 @@ module.exports = {
 
     const { _id } = request.params;
 
-   const { firstName, lastName, email, age, file, purpose, bio, termsAndConditions } = request.body;
+    const { firstName, lastName, email, age, address, purpose, bio } = request.body;
 
     await Perso.findByIdAndUpdate({ _id: _id }, {
       $set: {
-       firstName: firstName,
-      lastName: lastName,
-      email: email,
-      age: age,
-      file: file,
-      purpose: purpose,
-      bio: bio,
-      termsAndConditions: termsAndConditions
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        age: age,
+        address: address,
+        purpose: purpose,
+        bio: bio
       }
     }, { new: true }).then(function () {
       response.redirect("/admin-console/admin-perso")

@@ -22,7 +22,7 @@ const persoSchema = new mongoose.Schema({
         min: [15, 'Minimum age is 15'],
         max: [120, 'Maximum age is 120']
     },
-    file: {
+    address: {
         type: String
     },
     purpose: {
