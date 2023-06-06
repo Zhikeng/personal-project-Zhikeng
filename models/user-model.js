@@ -44,7 +44,7 @@ passport.deserializeUser(function (user, cb) {
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: "http://localhost:3000/auth/google/admin-console/create-perso"
+  callbackURL: "https://angry-eel-fedora.cyclic.app/auth/google/admin-console/create-perso"
 },
   function (accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ googleId: profile.id }, function (err, user) {
