@@ -6,8 +6,8 @@
     --white: #ffffff;
     --aqua: #00ffff;
     --goldenrod: #daa520;
-    --coral:#ff7f50;
-    --lightcoral:#f08080;
+    --coral: #ff7f50;
+    --lightcoral: #f08080;
     --teal: #006B6B;
     --grey: #C2C2C2;
 }
@@ -125,11 +125,14 @@ p {
 .index-content {
     background-color: var(--black);
     width: 80%;
-    min-width:fit-content;
+    min-width: fit-content;
     border: var(--teal) 5px solid;
     margin: 5% auto;
     padding: 6% 5%;
     border-radius: 8px;
+}
+
+.flex-frame {
     display: flex;
     flex-flow: row;
 }
@@ -306,21 +309,21 @@ footer {
     height: 25vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url("/images/nav-foot.jpg");    
+    background-image: url("/images/nav-foot.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
-  }
-  
-  .scroll-parent {
+}
+
+.scroll-parent {
     position: relative;
     width: 100vw;
     height: 20rem;
     padding: 2rem 0;
     overflow-x: hidden;
-  }
-  
-  .scroll-element {
+}
+
+.scroll-element {
     width: inherit;
     height: inherit;
     position: absolute;
@@ -329,59 +332,61 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .scroll-element img {
-    width: 13%;
-  }
-  
-  .primary {
-    animation: primary 20s linear infinite;
-  }
-  
-  .secondary {
-    animation: secondary 20s linear infinite;
-  }
-  
-  @keyframes primary {
-    from {
-      left: 0%;
-    }
-    to {
-      left: -100%;
-    }
-  }
-  
-  @keyframes secondary {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 0%;
-    }
-  }
+}
 
-  .scroll-background {
+.scroll-element img {
+    width: 13%;
+}
+
+.primary {
+    animation: primary 20s linear infinite;
+}
+
+.secondary {
+    animation: secondary 20s linear infinite;
+}
+
+@keyframes primary {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes secondary {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+.scroll-background {
     display: flex;
     align-items: center;
     height: 45vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url("/images/nav-foot.jpg");    
+    background-image: url("/images/nav-foot.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
-  }
+}
 
-   .scroll-chart {
+.scroll-chart {
     position: relative;
     width: 100vw;
     height: 45rem;
     padding: 2rem 0;
     overflow-x: hidden;
-  }
+}
 
-    .scroll-photo {
+.scroll-photo {
     width: inherit;
     height: inherit;
     position: absolute;
@@ -390,12 +395,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .scroll-photo img {
+}
+
+.scroll-photo img {
     width: 33%;
     height: 38%;
-  }
+}
 
 /* .ma-bottom-logo {
     width:200px;
@@ -442,21 +447,23 @@ footer {
     background-repeat: no-repeat;
 }
 
-.search-engine h1, h3, label {
+.search-engine h1,
+h3,
+label {
     font-size: 1.6rem;
     font-family: 'Fredericka the Great', cursive;
 }
 
-.search-engine input{
-  display: block;
-  margin: 0 auto;
-  font-size: 1.2rem;
+.search-engine input {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 #searchWrapper {
     display: flex;
     flex-direction: column;
-    gap: .25rem; 
+    gap: .25rem;
 }
 
 #housingList {
@@ -473,13 +480,13 @@ footer {
     list-style: none;
 }
 
-.housing > h3 {
+.housing>h3 {
     margin-bottom: .25rem;
-    color: var(--lightcoral);
+    color: greenyellow;
     font-size: 1rem;
 }
 
-.housing > p {
+.housing>p {
     font-size: 1rem;
 }
 
@@ -615,14 +622,7 @@ a:active {
         display: block;
     }
 
-    .index-content {
-        background-color: var(--black);
-        width: 80%;
-        min-width:fit-content;
-        border: var(--teal) 5px solid;
-        margin: 5% auto;
-        padding: 6% 5%;
-        border-radius: 8px;
+    .flex-frame {
         display: flex;
         flex-flow: column;
     }
@@ -643,7 +643,8 @@ a:active {
         background-repeat: no-repeat;
     }
 
-    .search-engine h1, label {
+    .search-engine h1,
+    label {
         font-size: 1.2rem;
         font-family: 'Fredericka the Great', cursive;
     }
@@ -709,7 +710,7 @@ a:active {
         font-size: 0.8em;
         overflow-x: auto;
     }
-    
+
     .table-responsive .link-button {
         font-size: 0.7em;
     }
@@ -726,7 +727,7 @@ a:active {
         border: var(--aqua) solid 3px;
         border-radius: 8px;
     }
-    
+
     .logout-button {
         background-color: var(--lightcoral);
         font-size: 1rem;
@@ -798,14 +799,7 @@ a:active {
         display: block;
     }
 
-    .index-content {
-        background-color: var(--black);
-        width: 80%;
-        min-width:fit-content;
-        border: var(--teal) 5px solid;
-        margin: 5% auto;
-        padding: 6% 5%;
-        border-radius: 8px;
+    .flex-frame {
         display: flex;
         flex-flow: column;
     }
@@ -826,8 +820,7 @@ a:active {
         background-repeat: no-repeat;
     }
 
-    .search-engine 
-    h1,
+    .search-engine h1,
     label {
         font-size: 1.6rem;
         font-family: 'Fredericka the Great', cursive;
@@ -871,11 +864,11 @@ a:active {
         min-width: 10vw;
     }
 
-    .about-page > h1 {
+    .about-page>h1 {
         font-size: 1.5rem;
     }
 
-    .about-page > p {
+    .about-page>p {
         font-size: 1.2rem;
     }
 
@@ -888,7 +881,7 @@ a:active {
         font-size: 1.5em;
         overflow-x: auto;
     }
-    
+
     .table-responsive .link-button {
         font-size: 0.8em;
     }
