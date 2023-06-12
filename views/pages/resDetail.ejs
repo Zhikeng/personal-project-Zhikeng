@@ -15,7 +15,7 @@
     <p>Importance(s) to choose a home: <%= foundRes.importance %></p>
     <p>Reasonable rent: <%= foundRes.rent %></p>
     <p>Why stay in current home: <%= foundRes.reason %></p>
-    <p>People living in this home: <% for (let i = 0; i < res.people; i++) { %>
+    <p>People living in this home: <% for (let i = 0; i < foundRes.people; i++) { %>
         <i class="fa-sharp fa-solid fa-person fa-xl"></i>
         <% } %></p>
     <p>Respondent age range: <%= foundRes.age %></p>
