@@ -3,7 +3,7 @@
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
-<div bgcolor=black>
+<div>
 <img src="public/images/LOGO-01.png" alt="HOUSING_AID_LOGO">
 </div>
 <br />
