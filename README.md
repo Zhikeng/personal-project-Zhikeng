@@ -3,13 +3,13 @@
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
-<div>
+<div bgcolor=black>
 <img src="public/images/LOGO-01.png" alt="HOUSING_AID_LOGO">
 </div>
 <br />
 <div align="center">
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">MA Housing Assistance</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
