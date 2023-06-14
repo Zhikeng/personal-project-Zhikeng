@@ -4,7 +4,7 @@
 
 <!-- PROJECT LOGO -->
 <div>
-<img src="/images/LOGO-01.png" alt="HOUSING_AID_LOGO">
+<img src="public/images/LOGO-01.png" alt="HOUSING_AID_LOGO">
 </div>
 <br />
 <div align="center">
@@ -139,9 +139,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-ZK - https://www.linkedin.com/in/zhikeng-kong/ - kongzhikeng@gmail.com
+ZK - [![LinkedIn][linkedin-shield]][linkedin-url] - kongzhikeng@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/Zhikeng/personal-project-Zhikeng)
+Project Link: [https://github.com/Zhikeng/personal-project-Zhikeng](https://github.com/Zhikeng/personal-project-Zhikeng)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -162,3 +162,6 @@ Use this space to list resources you find helpful and would like to give credit 
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/zhikeng-kong/
