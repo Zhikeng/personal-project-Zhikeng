@@ -125,3 +125,41 @@ const displayHousingList = (housing) => {
 
 loadHousingList();
 
+// google map set up 
+
+// function locationMap(){
+//     var options = {
+//       center: {lat:42.3601, lng:-71.057083}, //for Boston area
+//       zoom: 9
+//     }
+//     map = new google.maps.Map(document.getElementById("googleMap"), options)  
+    
+  
+  
+//     function addMarker(location){
+//       const marker = new google.maps.Marker({
+//         position:location,
+//         map:map
+//       })
+//     }
+    
+//     addMarker({lat:42.50057, lng:-71.43897})
+//     addMarker({lat:42.32444, lng:-71.17459})
+//     addMarker({lat:42.47904, lng:-71.14990})
+//     addMarker({lat:42.25326, lng:-70.91219})
+//     addMarker({lat:41.89278, lng:-71.42019})
+//     addMarker({lat:41.59313, lng:-70.60350})
+//     addMarker({lat:42.31157, lng:-71.21965})
+//     addMarker({lat:42.46739, lng:-71.31076})
+//     addMarker({lat:42.03339, lng:-71.26728})
+//     addMarker({lat:41.61178, lng:-70.53710})
+//     addMarker({lat:42.43284, lng:-71.18781})
+//     addMarker({lat:42.42021, lng:-71.87729})
+//     addMarker({lat:42.39407, lng:-71.45989})
+//     addMarker({lat:42.21680, lng:-72.63855})
+//     addMarker({lat:42.33590, lng:-71.11370})
+  
+//   }
+
+//   locationMap();
+
