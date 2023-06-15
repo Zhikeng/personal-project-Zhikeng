@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Homepage Screen Shot](/public/image/index-screenshot)](https://github.com/Zhikeng/personal-project-Zhikeng.git)
+[![Homepage Screen Shot](/public/image/index-screenshot.png)](https://github.com/Zhikeng/personal-project-Zhikeng.git)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
