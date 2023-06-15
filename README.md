@@ -4,7 +4,7 @@
 
 <!-- PROJECT LOGO -->
 <div>
-<img src="public/images/LOGO-01 copy.png" alt="HOUSING_AID_LOGO">
+<img src="public/images/LOGO-01.png" alt="HOUSING_AID_LOGO">
 </div>
 <br />
 <div align="center">
