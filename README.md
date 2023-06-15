@@ -55,16 +55,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Homepage Screen Shot](/public/image/index-screenshot.png)](https://github.com/Zhikeng/personal-project-Zhikeng.git)
-
+[![Homepage Screen Shot](/public/images/index-screenshot.png)](https://github.com/Zhikeng/personal-project-Zhikeng.git)
+This is the index page. We have Housing Assistance Logo designed by ZK's friend: VK. And the Houses pictures were taken by ZK himself at Malden, MA. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
