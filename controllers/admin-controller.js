@@ -5,7 +5,7 @@ const Perso = require('../models/perso-model')
 
 module.exports = {
     admin_res: async function (request, response) {
-        // if (request.isAuthenticated()) {
+        if (request.isAuthenticated()) {
             await Response.find().then(function (allRes) {
                 response.render('pages/adminRes', {
                     responseArray: allRes,
@@ -14,7 +14,7 @@ module.exports = {
             }).catch(function (error) {
                 console.log(error)
             })
-        // }
+        }
     },
     create_res: (request, response) => {
         // if (request.isAuthenticated()) {
