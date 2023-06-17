@@ -118,7 +118,7 @@ Search Bar: tool can be used to find the afforbale housing on the MassHousing's 
 
 [![SearchBar Screen Shot](/public/images/search-screenshot.png)](https://github.com/Zhikeng/personal-project-Zhikeng.git)
 
-Footer: There are different links to other websites. They are still on development.
+Footer: There are different links to other websites. They are still on development. Maybe it's a good idea to leave this place blank for the futur ad campaign? lol
 
 [![Footer Screen Shot](/public/images/footer-screenshot.png)](https://github.com/Zhikeng/personal-project-Zhikeng.git)
 
