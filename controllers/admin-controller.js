@@ -5,7 +5,7 @@ const Perso = require('../models/perso-model')
 
 module.exports = {
     admin_res: async function (request, response) {
-        if (request.isAuthenticated()) {
+        // if (request.isAuthenticated()) {
             await Response.find().then(function (allRes) {
                 response.render('pages/adminRes', {
                     responseArray: allRes,
@@ -14,13 +14,13 @@ module.exports = {
             }).catch(function (error) {
                 console.log(error)
             })
-        }
+        // }
     },
     create_res: (request, response) => {
-        if (request.isAuthenticated()) {
+        // if (request.isAuthenticated()) {
             response.render('pages/createRes')
             // response.send("This route points to the Create page")
-        }
+        // }
     },
     update_res: async function (request, response) {
         if (request.isAuthenticated()) {
@@ -48,9 +48,9 @@ module.exports = {
         }
     },
     create_perso: (request, response) => {
-        if (request.isAuthenticated()) {
+        // if (request.isAuthenticated()) {
             response.render('pages/createPerso')
-        }
+        // }
     },
     update_perso: async function (request, response) {
         if (request.isAuthenticated()) {
