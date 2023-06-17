@@ -51,12 +51,14 @@ module.exports = {
     })
   },
   delete: async function (request, response) {
+    if (request.isAuthenticated()) {
     const { _id } = request.params;
     await Perso.deleteOne({ _id: _id }).then(function () {
       response.redirect("/admin-console/admin-perso")
     }).catch(function (error) {
       console.log(error)
     })
+    }
   }
 }
 
