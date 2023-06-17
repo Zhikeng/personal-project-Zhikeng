@@ -37,7 +37,7 @@ module.exports = {
         // response.send("This route points to the Update page")
     },
     admin_perso: async function (request, response) {
-        if (request.isAuthenticated()) {
+        // if (request.isAuthenticated()) {
             await Perso.find().then(function (allPerso) {
                 response.render('pages/adminPerso', {
                     persoArray: allPerso,
@@ -45,7 +45,7 @@ module.exports = {
             }).catch(function (error) {
                 console.log(error)
             })
-        }
+        // }
     },
     create_perso: (request, response) => {
         // if (request.isAuthenticated()) {
