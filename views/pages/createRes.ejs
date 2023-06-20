@@ -148,10 +148,32 @@
         </div>
         <br>
         <div>
-            <input type="submit" value="Submit" class="form-button" />
+            <input type="submit" value="Submit" class="form-button" onclick="submitSurvey()"/>
         </div>
     </form>
+    <p>You had submitted the survey</p>
+    <span><button class="add-button"><a href="/housing-survey">GO TO THE SUMMARY</a></button></span>
     <span><button class="logout-button"><a href="/logout/">LOGOUT</a></button></span>
 </div>
+<script>
+    function submitSurvey(){
+        let satisfaction = document.getElementById("satisfaction").value;
+        switch(satisfaction){
+            case "1":
+            case "2":
+                alert("It looks like you aren't satisfied at all with the house you're living in. Don't worry. Let's get some help! Thanks!");
+                break;
+            case "3":
+            case "4":
+                alert("You are still satisfied with the house you're living in, right? Let us know If you wanna make some changes. We can help! Thank you!");
+                break;
+            case "5":
+                alert("You are very satisfied with the house you're living in. That's awesome! Anytime you need us, we are here! Thank you!")
+                break;
+            default:
+                alert("We are Housing Assistance!");
+        }
+    }
+</script>
 
 <%- include('../partials/footer') -%>

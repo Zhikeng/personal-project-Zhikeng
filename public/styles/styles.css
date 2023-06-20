@@ -83,7 +83,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 0.5 1 auto;
 }
 
@@ -231,7 +231,7 @@ textarea {
     border-radius: 8px;
 }
 
-.nav-button {
+/* .nav-button {
     background-color: var(--teal);
     font-weight: bold;
     min-width: 100px;
@@ -241,7 +241,7 @@ textarea {
     padding: 2px;
     border: var(--teal) solid 1px;
     border-radius: 50%;
-}
+} */
 
 .link-button {
     background-color: var(--teal);

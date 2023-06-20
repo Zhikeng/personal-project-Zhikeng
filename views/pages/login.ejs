@@ -1,36 +1,45 @@
-<%- include('../partials/head') -%> 
-    
-<%- include('../partials/navbar') -%> 
+<%- include('../partials/head') -%>
 
-   <!-- content -->
-   <main>
-   <!-- <div class="layout"> -->
-    <div class="content">
-        <h1>LOGIN</h1>
-        <fieldset>
-            <form action="/login" method="POST" class="form">
-                <div>
-                <label for="username">Username:<input id="username" name="username" type="text" placeholder="username" required/></label>
-                </div>
-                <div>
-                <label for="password">Password:<input id="password" name="password" type="password" pattern="[a-z 0-5]{8}" placeholder="8characters" required/></label>
-                </div>
-                <div>
-                    <input type="submit" value="Submit" class="login-button"/>
-                </div>
-                <div>
-                    <button class="form-button">
-                        <a href="/auth/google" role="button" class="login-font">Login with <i class="fa-brands fa-google"></i></a>
-                    </button>
-                </div>
-                <div class="register-link">
-                    <p>Not a member yet? </p>
-                    <button type="submit" class="link-button"><a href="/register">SIGN UP</a></button>
-                </div>
-            </form>
-        </fieldset>
-    </div>
-   <!-- </div> -->
-   </main>
-   
-<%- include('../partials/footer') -%> 
+    <%- include('../partials/navbar') -%>
+
+        <!-- content -->
+        <main>
+            <!-- <div class="layout"> -->
+            <div class="content">
+                <h1>LOGIN</h1>
+                <fieldset>
+                    <form action="/login" method="POST" class="form">
+                        <div>
+                            <label for="username">Username:<input id="username" name="username" type="text"
+                                    placeholder="username" required /></label>
+                        </div>
+                        <div>
+                            <label for="password">Password:<input id="password" name="password" type="password"
+                                    pattern="[a-z 0-5]{8}" placeholder="8characters" required /></label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" class="login-button" onclick="login()" />
+                        </div>
+                        <div>
+                            <button class="form-button" onclick="login()">
+                                <a href="/auth/google" role="button" class="login-font">Login with <i
+                                        class="fa-brands fa-google"></i></a>
+                            </button>
+                        </div>
+                        <div class="register-link">
+                            <p>Not a member yet? </p>
+                            <button type="submit" class="link-button"><a href="/register">SIGN UP</a></button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <!-- </div> -->
+        </main>
+        <script>
+            function login() {
+                let username = document.getElementById("username").value;
+                alert(`Welcome back ${username}!`);
+            }
+        </script>
+
+        <%- include('../partials/footer') -%>
