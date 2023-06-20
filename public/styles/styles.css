@@ -239,7 +239,7 @@ textarea {
     display: block;
     margin: 0 auto;
     padding: 2px;
-    border: var(--aqua) solid 1px;
+    border: var(--teal) solid 1px;
     border-radius: 50%;
 }
 
