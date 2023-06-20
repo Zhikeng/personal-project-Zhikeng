@@ -4,14 +4,18 @@
 
 <div class="content">
     <h1>HOUSING SURVEY</h1>
+    <!-- <p>If you had submitted the survey</p>
+    <span><button class="add-button"><a href="/housing-survey">GO TO THE SUMMARY</a></button></span>
+    <span><button class="logout-button"><a href="/logout/">LOGOUT</a></button></span> -->
     <form action="/res" method="POST" class="form">
+        <p style="text-align: center;">(press ctrl/command to mutilple select)</p>
         <div>
             <label for="timeStamp">Date: 
                 <input id="timeStamp" name="timeStamp" type="datetime-local" required/>
             </label>
         </div>
         <div>
-            <label for="status">Status: 
+            <label for="status">Status:
                 <select id="status" name="status" multiple required>
                     <option>Homeowner</option>
                     <option>Renter</option>
@@ -151,7 +155,7 @@
             <input type="submit" value="Submit" class="form-button" onclick="submitSurvey()"/>
         </div>
     </form>
-    <p>You had submitted the survey</p>
+    <p>If you had submitted the survey</p>
     <span><button class="add-button"><a href="/housing-survey">GO TO THE SUMMARY</a></button></span>
     <span><button class="logout-button"><a href="/logout/">LOGOUT</a></button></span>
 </div>
